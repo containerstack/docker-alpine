@@ -7,11 +7,12 @@ A super small Docker image based on [Alpine Linux][alpine]. The image is only 5 
 Docker images today are big. Usually much larger than they need to be. There are a lot of ways to make them smaller, but the Docker populace still jumps to the `ubuntu` base image for most projects. The size savings over `ubuntu` and other bases are huge:
 
 ```
-REPOSITORY          TAG           IMAGE ID          VIRTUAL SIZE
-gliderlabs/alpine   latest        9cfff538e583      4.803 MB
-debian              latest        19134a8202e7      123.1 MB
-ubuntu              latest        104bec311bcd      129 MB
-centos              latest        67591570dd29      191.8 MB
+REPOSITORY              TAG                 IMAGE ID            CREATED             SIZE
+containerstack/alpine   latest              e6efe7544e54        18 minutes ago      3.97MB
+debian                  latest              a25c1eed1c6f        3 days ago          123MB
+centos                  latest              3bee3060bfc8        5 days ago          193MB
+ubuntu                  latest              7b9b13f7b9c0        8 days ago          118MB
+fedora                  latest              15895ef0b3b2        7 weeks ago         231MB
 ```
 
 There are images such as `progrium/busybox` which get us very close to a minimal container and package system. But these particular BusyBox builds piggyback on the OpenWRT package index which is often lacking and not tailored towards generic everyday applications. Alpine Linux has a much more complete and up to date [package index][alpine-packages]:
