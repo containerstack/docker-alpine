@@ -39,6 +39,9 @@ ENTRYPOINT ["mysql"]
 
 Only 3 seconds to build and results in a 36 MB image! Hooray!
 
+# Shell access
+To access the shell use ```sh``
+
 ## Other helpfull stuf
 
 [alpine]: http://alpinelinux.org/
