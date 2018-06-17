@@ -1,7 +1,7 @@
 FROM scratch
-LABEL maintainer="Remon Lam [remon@containerstack.io]" architecture="armhf"
+LABEL maintainer="Remon Lam [remon@containerstack.io]" architecture="amd64"
 
-ENV ALPINE_ARCH armhf
+ENV ALPINE_ARCH amd64
 ENV ALPINE_VERSION 3.5.1
 
 ADD alpine-minirootfs-${ALPINE_VERSION}-${ALPINE_ARCH}.tar.gz /
