@@ -2,7 +2,7 @@ FROM scratch
 LABEL maintainer="Remon Lam [remon@containerstack.io]" architecture="armhf"
 
 ENV ALPINE_ARCH armhf
-ENV ALPINE_VERSION 3.8.0
+ENV ALPINE_VERSION 3.8.1
 
-ADD alpine-minirootfs-${ALPINE_VERSION}_rc4-${ALPINE_ARCH}.tar.gz /
+ADD alpine-minirootfs-${ALPINE_VERSION}-${ALPINE_ARCH}.tar.gz /
 CMD ["/bin/sh"]
