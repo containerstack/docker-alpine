@@ -1,5 +1,5 @@
 FROM scratch
-#LABEL maintainer="Remon Lam [remon@containerstack.io]" architecture="armhf"
+LABEL maintainer="Remon Lam [remon@containerstack.io]" architecture="armhf"
 
 ENV ALPINE_ARCH armhf
 ENV ALPINE_VERSION 3.8.2
